@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Food Habits and Nutrition Calculator - a community service project">
+  <title>Food Habits | Nutrition Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero" id="home">
+    <nav class="nav">
+      <a class="brand" href="#home">🥗 Food Habits</a>
+      <div class="navlinks">
+        <a href="#about">About</a><a href="#nutrients">Nutrition</a>
+        <a href="#calculator">Calculator</a><a href="#gallery">Gallery</a>
+      </div>
+    </nav>
+    <div class="hero-content">
+      <p class="eyebrow">COMMUNITY SERVICE PROJECT</p>
+      <h1>Healthy Food Habits,<br><span>Healthier Communities.</span></h1>
+      <p>Explore everyday foods and understand their estimated nutritional values.</p>
+      <a class="button" href="#calculator">Try Nutrition Calculator</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="about">
+      <p class="eyebrow">ABOUT THE PROJECT</p>
+      <h2>Make informed food choices</h2>
+      <p class="intro">Food Habits is an educational website designed to build awareness about balanced eating. Select foods, enter quantities and view estimated calories, protein, carbohydrates, fats and fibre.</p>
+      <div class="cards">
+        <article class="card"><span>🎯</span><h3>Our Objective</h3><p>Promote awareness of nutrients and healthy everyday food choices.</p></article>
+        <article class="card"><span>📊</span><h3>Nutrition Information</h3><p>Understand how different foods contribute to daily nutrient intake.</p></article>
+        <article class="card"><span>📱</span><h3>Easy to Use</h3><p>A simple layout designed for mobile phones and desktop computers.</p></article>
+      </div>
+    </section>
+
+    <section class="section tint" id="nutrients">
+      <p class="eyebrow">BASIC NUTRITION</p><h2>Know your nutrients</h2>
+      <div class="nutrients">
+        <div><b>🍚 Carbohydrates</b><p>Provide energy. Sources include rice, wheat, millets and fruits.</p></div>
+        <div><b>🥚 Protein</b><p>Helps build and maintain body tissues. Sources include eggs, pulses, milk and beans.</p></div>
+        <div><b>🥑 Fats</b><p>Provide energy and help the body absorb certain vitamins.</p></div>
+        <div><b>🥦 Fibre</b><p>Found in fruits, vegetables, pulses and whole grains.</p></div>
+        <div><b>🍊 Vitamins</b><p>Support many normal body functions and are found in varied foods.</p></div>
+        <div><b>🥛 Minerals</b><p>Important for bones, blood and other body functions.</p></div>
+      </div>
+    </section>
+
+    <section class="section" id="calculator">
+      <p class="eyebrow">INTERACTIVE TOOL</p><h2>Nutrition Calculator</h2>
+      <p class="intro">Choose a food and quantity to estimate its nutritional contribution.</p>
+      <div class="calculator">
+        <div class="form-grid">
+          <label>Food item<select id="food">
+            <option value="egg">Egg (1 large)</option><option value="milk">Milk (100 ml)</option>
+            <option value="rice">Cooked rice (100 g)</option><option value="banana">Banana (1 medium)</option>
+            <option value="apple">Apple (1 medium)</option><option value="dal">Cooked dal (100 g)</option>
+            <option value="chapati">Chapati (1 medium)</option><option value="curd">Curd (100 g)</option>
+            <option value="almonds">Almonds (10 pieces)</option><option value="potato">Boiled potato (100 g)</option>
+          </select></label>
+          <label>Quantity<input id="quantity" type="number" min="0.1" step="0.1" value="1"></label>
+        </div>
+        <button class="button" id="add">Add food</button>
+        <div id="message" aria-live="polite"></div>
+        <div class="table-wrap"><table><thead><tr><th>Food</th><th>Qty</th><th>Calories</th><th>Protein</th><th>Carbs</th><th>Fat</th><th>Fibre</th><th></th></tr></thead><tbody id="items"></tbody></table></div>
+        <h3 class="total-heading">Total nutrition estimate</h3>
+        <div class="totals">
+          <div><small>Calories</small><strong id="calories">0 kcal</strong></div>
+          <div><small>Protein</small><strong id="protein">0 g</strong></div>
+          <div><small>Carbohydrates</small><strong id="carbs">0 g</strong></div>
+          <div><small>Fat</small><strong id="fat">0 g</strong></div>
+          <div><small>Fibre</small><strong id="fibre">0 g</strong></div>
+        </div>
+        <button class="button secondary" id="clear">Clear report</button>
+      </div>
+      <p class="note">Note: Values are approximate educational estimates. Actual nutrition varies with food size, variety, brand and preparation method. This tool does not provide medical or personalised dietary advice.</p>
+    </section>
+
+    <section class="section tint" id="gallery">
+      <p class="eyebrow">FOOD GALLERY</p><h2>Explore colourful foods</h2>
+      <div class="gallery">
+        <div class="gallery-item"><span>🍎</span><b>Fresh Fruits</b></div>
+        <div class="gallery-item"><span>🥦</span><b>Green Vegetables</b></div>
+        <div class="gallery-item"><span>🥚</span><b>Protein Foods</b></div>
+        <div class="gallery-item"><span>🌾</span><b>Whole Grains</b></div>
+        <div class="gallery-item"><span>🥛</span><b>Dairy Foods</b></div>
+        <div class="gallery-item"><span>🥜</span><b>Nuts and Seeds</b></div>
+      </div>
+    </section>
+  </main>
+  <footer><p>Food Habits · Community Service Project</p><a href="#home">Back to top ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
